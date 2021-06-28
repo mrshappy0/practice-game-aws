@@ -3,12 +3,12 @@ import * as cdk from "@aws-cdk/core";
 import * as lambda from "@aws-cdk/aws-lambda";
 // import * as IpAwsTurnBasedGame from '../lib/ip-aws-turn-based-game-stack';
 
-import { HitCounter } from "../lib/hitcounter";
+import { HeapGame } from "../lib/heapgame";
 
 test("DynamoDB Table Created", () => {
   const stack = new cdk.Stack();
   // WHEN
-  new HitCounter(stack, "MyTestConstruct", {
+  new HeapGame(stack, "MyTestConstruct", {
     downstream: new lambda.Function(stack, "TestFunction", {
       runtime: lambda.Runtime.NODEJS_10_X,
       handler: "lambda.handler",
@@ -22,7 +22,7 @@ test("DynamoDB Table Created", () => {
 test("Lambda Has Environment Variables", () => {
   const stack = new cdk.Stack();
   // WHEN
-  new HitCounter(stack, "MyTestConstruct", {
+  new HeapGame(stack, "MyTestConstruct", {
     downstream: new lambda.Function(stack, "TestFunction", {
       runtime: lambda.Runtime.NODEJS_10_X,
       handler: "lambda.handler",
@@ -49,7 +49,7 @@ test("Lambda Has Environment Variables", () => {
 test("DynamoDB Table Created With Encryption", () => {
   const stack = new cdk.Stack();
   // WHEN
-  new HitCounter(stack, "MyTestConstruct", {
+  new HeapGame(stack, "MyTestConstruct", {
     downstream: new lambda.Function(stack, "TestFunction", {
       runtime: lambda.Runtime.NODEJS_10_X,
       handler: "lambda.handler",
