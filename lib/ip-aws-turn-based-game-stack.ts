@@ -25,8 +25,8 @@ export class IpAwsTurnBasedGameStack extends cdk.Stack {
 
     new TableViewer(this, "ViewHeapGameTable", {
       title:
-        "URL Tracker at https://vgxccirlr1.execute-api.us-east-1.amazonaws.com/prod/",
-      sortBy: "-hits",
+        "Nim Game Status - DynamoDB Table Viewer",
+      // sortBy: "-hits",
       table: helloWithHeapGame.table,
     });
   }
