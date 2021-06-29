@@ -7,7 +7,7 @@ When creating a user, provide a *user*, *password*, *phoneNumber*, and *email*.
 
 AWS Resources Utilized: SNS, DynamoDB, Cognito, Lambda, APIGateway
 
-![AWS Architecture](./photo-assets/turn-based-game.png)
+![AWS Architecture](https://imgur.com/3CgFDag)
 
 
 ### Helpful CDK Information
