@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const cdk = require("@aws-cdk/core");
+const ip_aws_turn_based_game_stack_1 = require("../lib/ip-aws-turn-based-game-stack");
+const app = new cdk.App();
+new ip_aws_turn_based_game_stack_1.IpAwsTurnBasedGameStack(app, 'IpAwsTurnBasedGameStack');
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaXAtYXdzLXR1cm4tYmFzZWQtZ2FtZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImlwLWF3cy10dXJuLWJhc2VkLWdhbWUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQ0EscUNBQXFDO0FBQ3JDLHNGQUE4RTtBQUU5RSxNQUFNLEdBQUcsR0FBRyxJQUFJLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUMxQixJQUFJLHNEQUF1QixDQUFDLEdBQUcsRUFBRSx5QkFBeUIsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiIyEvdXNyL2Jpbi9lbnYgbm9kZVxuaW1wb3J0ICogYXMgY2RrIGZyb20gJ0Bhd3MtY2RrL2NvcmUnO1xuaW1wb3J0IHsgSXBBd3NUdXJuQmFzZWRHYW1lU3RhY2sgfSBmcm9tICcuLi9saWIvaXAtYXdzLXR1cm4tYmFzZWQtZ2FtZS1zdGFjayc7XG5cbmNvbnN0IGFwcCA9IG5ldyBjZGsuQXBwKCk7XG5uZXcgSXBBd3NUdXJuQmFzZWRHYW1lU3RhY2soYXBwLCAnSXBBd3NUdXJuQmFzZWRHYW1lU3RhY2snKTtcbiJdfQ==
