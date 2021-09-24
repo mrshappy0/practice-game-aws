@@ -63,7 +63,7 @@ export class HeapGame extends cdk.Construct {
     const lambdaToSNS = iam.Role.fromRoleArn(
       this,
       "TVR-TurnBasedGame-Ifx-IamRoleA750FF82-1WG3PZX4OFZJO",
-      "arn:aws:iam::881385135648:role/TVR-TurnBasedGame-Ifx-IamRoleA750FF82-1WG3PZX4OFZJO"
+      "arn:aws:iam::881385135648:role/TurnBasedGameLambdaToSNS"
     );
 
     this.handler = new lambda.Function(this, "HeapHandler", {
